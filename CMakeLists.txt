@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.31)
-project(learnopengl)
+project(Window)
 
 set(CMAKE_CXX_STANDARD 20)
 
@@ -10,5 +10,5 @@ set(CMAKE_CXX_STANDARD 20)
 # e.g. if using v2.5, add_subdirectory(lib/glfw-2.5) will likely be the correct directory.
 #
 add_subdirectory(lib/glfw-3.4)
-add_executable(learnopengl main.cpp)
-target_link_libraries(learnopengl glfw)
+add_executable(Window window.cpp)
+target_link_libraries(Window glfw)
