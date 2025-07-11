@@ -13,3 +13,5 @@ recommend learning for yourself first!
 [LearnOpenGL](https://learnopengl.com) - Primary references for this code
 
 [GLFW](https://www.glfw.org/) (v3.4) - Library files (built from source)
+
+[GLAD](https://glad.dav1d.de/) (C++, OpenGL, v3.3, Core) - Secondary library files generated from the provided tool

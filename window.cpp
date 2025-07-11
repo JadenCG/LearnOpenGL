@@ -1,4 +1,5 @@
 #include <iostream>
+#include "lib/glad/include/glad/glad.h"
 #include <GLFW/glfw3.h>
 
 //TODO: does not use GLAD! This should be used for handling OS-specific calls
@@ -43,11 +44,11 @@ int main() {
         //Recommended order is:
         //  1. input
         //  2. render
-        //  3. misc glfw
+        //  3. misc glfw / cleanup
         processInput(window);
 
-        //glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-        //glClear(GL_COLOR_BUFFER_BIT);
+        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT);
 
         glfwSwapBuffers(window);
         glfwPollEvents();
