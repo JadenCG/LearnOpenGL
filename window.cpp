@@ -36,7 +36,15 @@ int main() {
     }
 
     //Set this window as the current context
+    //initialize GLAD immediately after and end if it failed
     glfwMakeContextCurrent(window);
+
+    if (!gladLoadGLLoader((GLADloadproc) glfwGetProcAddress))
+    {
+        std::cout << "GLAD failed to initialize" << std::endl;
+        return -1;
+    }
+
 
     //A simple render loop provided by LearnOpenGL
     while(!glfwWindowShouldClose(window))
